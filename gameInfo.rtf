@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 TreasureHunter created by Gagandeep Thapar (he/they) Aerospace Engineering\
+\
+RUNNING THE GAME:\
+	- The \'93main\'94 function is written in the TreasureHunter.java file and will call mainMenu.java. The mainMenu file (once complete) will call Game.java. There are objects that are instantiated in mainMenu so Game cannot be run directly.\
+	- All supporting files have been included in \'93CSC203_Project3_ThaparGagandeep.ZIP\'94 folder.\
+		- Any JAR libraries used can be found in \'93SupportingFiles/JAR_LIBS\'94\
+			- Only the main JAR libraries used in CSC-203 were used\
+\
+OVERVIEW:\
+	- Aim of the game is to collect all of the coins (win condition) before the enemy entities catch you (lose condition)\
+	- Use WASD or Arrow Keys to move around\
+	- Mouse position relative to the player model will set the direction and will affect the running and attack animations and will set the attack direction\
+	- \'93Attacking\'94 (Clicking) will slag the ground. Any enemies caught in the slag will \'93die\'94 and will respawn in the middle of the screen.\
+	- Each enemy is instantiated with a different pathing algorithm: A-Star, SingleStep, and a custom basic algorithm that closes the vertical-gap before closing the horizontal-gap\
+	- The mainMenu will set the player model (and therefore the enemy models)\
+\
+PROJECT 3 BASE SPECIFICATIONS and COMPLETION CRITERIA:\
+- World must look entirely different\
+	- Custom map, textures, and grid setup (continuous instead of discrete grids)\
+- World changing event\
+	- Attacking will briefly change the background of adjacent cells to indicate the player attacked\
+	- Entities caught in the event will \'93die\'94 and will respawn at the portal with its predetermined pathing strategy\
+- Use Cursor keys to control the player model\
+	- Cursor and WASD keys offered to user to control player\
+\
+PROJECT 3 EXTRA CREDIT SPECIFICATIONS and COMPLETION CRITERIA:\
+- Use Cursor keys to control the player model\
+	- Cursor and WASD keys offered to user to control player\
+- 3 different kinds of entities with unique pathing algorithm\
+	- One of 4 entities used as player model, other 3 are used as enemy entities\
+	- Using AStar, Single Step, custom pathing algorithm to control the enemies\
+- Use Factory Design Pattern\
+	- Using Factory Design Pattern to create/store coins (collectibles), enemies, obstacles\
+- Submit short video\
+	- see \'93CSC203_Project3Video_ThaparGagandeep.mov\'94\
+	- see below for Google Drive Link to video\
+\
+KNOWN ISSUES\
+- Because the area A-Star searches is so large, the game can often become incredibly slow when the player model and the A-Star enemy are far apart. This can often be circumvented by either switching the algorithm and not using A-Star or keeping close to A-Star enemy. Changes to the A-Star algorithm to optimize time and space complexity were not attempted. \
+- M1 Macs have a weird error message get printed to the terminal. The error message does not interfere with the game, but is something to note. It appears to be a Java-issue and its implementation on Apple silicon\
+\
+LINK TO VIDEO:\
+https://drive.google.com/file/d/1MBNj_t95I7ZfnIU2OktOehMygUupsXRx/view?usp=sharing}
