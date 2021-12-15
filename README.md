@@ -1,4 +1,4 @@
-# **CSC - 203 Final Project**
+# **CSC - 203 Final Project: Treasure Hunter**
 **Project-Based Object-Oriented Programming and Design:** Development of a game written in Java using the concepts taught in the course.
 
 ## **Background**
